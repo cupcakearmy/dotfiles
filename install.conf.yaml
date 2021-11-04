@@ -7,9 +7,9 @@
 - clean: ["~"]
 
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.vim: vim
-    ~/.vimrc: vimrc
+    ~/.gitconfig: files/gitconfig
+    ~/.vim: files/vim
+    ~/.vimrc: files/vimrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
