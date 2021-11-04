@@ -1,7 +1,15 @@
-- clean: ['~']
+- defaults:
+    link:
+      create: true
+      relink: true
+      force: true
+
+- clean: ["~"]
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.vim: vim
     ~/.vimrc: vimrc
 
-
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
