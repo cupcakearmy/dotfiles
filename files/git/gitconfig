@@ -11,3 +11,6 @@
 	autocrlf = input
 [commit]
 	gpgsign = true
+
+[includeIf "gitdir:/Users/niccolo.borgioli/"]
+	path = "~/.dotfiles/files/git/config.work"

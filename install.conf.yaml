@@ -7,7 +7,7 @@
 - clean: ["~"]
 
 - link:
-      ~/.gitconfig: files/gitconfig
+      ~/.gitconfig: files/git/gitconfig
       ~/.vim: files/vim
       ~/.vimrc: files/vimrc
       ~/.config/fish: files/fish
