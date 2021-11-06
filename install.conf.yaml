@@ -1,17 +1,20 @@
 - defaults:
-      link:
-          create: true
-          relink: true
-          force: true
+    link:
+      create: true
+      relink: true
+      force: true
 
 - clean: ["~"]
 
 - link:
-      ~/.gitconfig: files/git/gitconfig
-      ~/.vim: files/vim
-      ~/.vimrc: files/vimrc
-      ~/.config/fish: files/fish
-      ~/.config/omf: files/omf
+    ~/.gitconfig: files/git/gitconfig
+    ~/.vim: files/vim
+    ~/.vimrc: files/vimrc
+    ~/.config/fish: files/fish
+    ~/.config/omf: files/omf
 
 - shell:
-      - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
+
+# Brew plugin
+- brew: [gnupg, fish, git-lfs, htop, n]
