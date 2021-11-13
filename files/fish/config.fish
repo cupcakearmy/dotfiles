@@ -3,7 +3,7 @@ set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -x PIPENV_VENV_IN_PROJECT true
 
 export GOPATH="$HOME/.go"
-if type -q $program
+if type -q brew
   export GOROOT=(brew --prefix go)"/libexec"
 end
 export PATH="$PATH:$GOPATH/bin:$GOROOT/bin:$HOME/.cargo/bin"
