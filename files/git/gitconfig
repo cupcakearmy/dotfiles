@@ -14,3 +14,6 @@
 
 [includeIf "gitdir:/Users/niccolo.borgioli/"]
 	path = "~/.dotfiles/files/git/config.work"
+
+[includeIf "gitdir:/home/nicco/"]
+	path = "~/.dotfiles/files/git/config.lenovo"
