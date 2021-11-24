@@ -12,6 +12,7 @@
     ~/.vimrc: files/vimrc
     ~/.config/fish: files/fish
     ~/.config/omf: files/omf
+    ~/.config/key-mapper: files/key-mapper
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

@@ -1,0 +1,9 @@
+{
+    "mapping": {
+        "1,102,1": "Escape",
+        "1,107,1": "Escape",
+        "1,29,1+1,104,1": "KEY_VOLUMEDOWN",
+        "1,29,1+1,109,1": "KEY_VOLUMEUP",
+        "1,1,1": "grave"
+    }
+}
