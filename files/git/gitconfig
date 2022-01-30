@@ -17,3 +17,5 @@
 
 [includeIf "gitdir:/home/nicco/"]
 	path = "~/.dotfiles/files/git/config.lenovo"
+[pull]
+	rebase = false
