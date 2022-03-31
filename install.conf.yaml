@@ -10,6 +10,7 @@
     ~/.gitconfig: files/git/gitconfig
     ~/.vim: files/vim
     ~/.vimrc: files/vimrc
+    ~/.config/nvim/init.vim: files/vimrc
     ~/.config/fish: files/fish
     ~/.config/omf: files/omf
     ~/.config/key-mapper: files/key-mapper
