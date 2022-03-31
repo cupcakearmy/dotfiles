@@ -15,7 +15,7 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
-nmap <Space> <Plug>(easymotion-overwin-w)
+nmap <Space> <Plug>(easymotion-bd-w)
 
 call plug#begin('~/.vim/plugged')
 
@@ -26,6 +26,6 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'easymotion/vim-easymotion'
+Plug 'asvetliakov/vim-easymotion'
 
 call plug#end()
