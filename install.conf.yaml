@@ -18,19 +18,5 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
 
-# Brew plugin
-- brew:
-    # Base
-    - fish
-    - git
-    - git-lfs
-    - neovim
-    - vim
-    # Utils
-    - tmux
-    - htop
-    - gnupg
-    - wget
-    # Languages
-    - n
-    - go
+- brewfile:
+    - files/Brewfile
