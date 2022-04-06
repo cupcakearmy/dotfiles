@@ -1,0 +1,60 @@
+{
+  "timeStamp": 1649245805663,
+  "version": "1.42.0",
+  "userSettings": {
+    "advancedUserEnabled": true,
+    "cloudStorageEnabled": true,
+    "externalLists": "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt",
+    "importedLists": [
+      "https://easylist-downloads.adblockplus.org/yt_annoyances_full.txt"
+    ],
+    "popupPanelSections": 63,
+    "webrtcIPAddressHidden": true
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-abuse",
+    "ublock-unbreak",
+    "adguard-spyware",
+    "adguard-spyware-url",
+    "easyprivacy",
+    "urlhaus-1",
+    "adguard-annoyance",
+    "adguard-social",
+    "fanboy-cookiemonster",
+    "fanboy-annoyance",
+    "ublock-annoyances",
+    "plowe-0",
+    "DEU-0",
+    "ITA-0"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "about-scheme",
+    "app.lokalise.com",
+    "chrome-extension-scheme",
+    "chrome-scheme",
+    "connect.deezer.com",
+    "edge-scheme",
+    "help.producthunt.com",
+    "love-foundation.org",
+    "moz-extension-scheme",
+    "opera-scheme",
+    "poocoin.app",
+    "registration.lovoo.com",
+    "vivaldi-scheme",
+    "www.interactivebrokers.co.uk",
+    "www.mediamarkt.de",
+    "www.schwanefeld.de",
+    "www.xbox.com",
+    "wyciwyg-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true\nno-cosmetic-filtering: mubi.com true\nno-cosmetic-filtering: handytarife.check24.de true\nno-cosmetic-filtering: www.douglas.de true",
+  "userFilters": "! Youtube\nwww.youtube.com###related\nwww.youtube.com###primary > .ytd-two-column-browse-results-renderer.style-scope:has(ytd-mini-guide-entry-renderer:nth-child(1)[active])\nwww.youtube.com###contents.ytd-rich-grid-renderer\n\n! 2021-09-06 https://www.theverge.com\nwww.theverge.com##.m-privacy-consent\nwww.theverge.com##.m-privacy-consent\nwww.theverge.com##.m-privacy-consent\n\n! 2021-10-12 https://www.cadooz.com\nwww.cadooz.com##.in.fade.modal-backdrop\n\n! 2022-03-04 https://www.geeksforgeeks.org\nwww.geeksforgeeks.org##.login-modal-div\nwww.geeksforgeeks.org/wp-content/themes/iconic-one/js/gfg.min.js\n"
+}
