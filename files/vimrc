@@ -26,5 +26,6 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'asvetliakov/vim-easymotion'
+Plug 'tpope/vim-surround'
 
 call plug#end()
