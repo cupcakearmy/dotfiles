@@ -1,19 +1,21 @@
-syntax on
-
-set number relativenumber
-set noerrorbells
-set tabstop=2 softtabstop=2
-set shiftwidth=2
-set expandtab
-set smartindent
-set nu
-set nowrap
-set smartcase
-set noswapfile
-set nobackup
-set undodir=~/.vim/undodir
-set undofile
-set incsearch
+if exists('g:vscode')
+else
+	syntax on
+	set number relativenumber
+	set noerrorbells
+	set tabstop=2 softtabstop=2
+	set shiftwidth=2
+	set expandtab
+	set smartindent
+	set nu
+	set nowrap
+	set smartcase
+	set noswapfile
+	set nobackup
+	set undodir=~/.vim/undodir
+	set undofile
+	set incsearch
+endif
 
 nmap <Space> <Plug>(easymotion-bd-w)
 
