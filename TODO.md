@@ -1,0 +1,4 @@
+# Todo
+
+- omf
+- change shell
