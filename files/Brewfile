@@ -20,6 +20,7 @@ brew "tree"
 brew "vim"
 brew "wget"
 brew "woff2"
+brew "kubectx"
 
 cask "appcleaner"
 cask "balenaetcher"
