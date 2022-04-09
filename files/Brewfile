@@ -22,6 +22,7 @@ brew "vim"
 brew "wget"
 brew "woff2"
 brew "kubectx"
+brew "kubernetes-cli"
 
 cask "appcleaner"
 cask "balenaetcher"
