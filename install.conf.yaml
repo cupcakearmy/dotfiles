@@ -15,6 +15,7 @@
     ~/.config/omf: files/omf
     ~/.config/key-mapper: files/key-mapper
     ~/.gitignore_global: files/git/gitignore_global
+    ~/.tmux.conf: files/tmux.conf
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
