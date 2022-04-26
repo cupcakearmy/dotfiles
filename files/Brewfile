@@ -23,6 +23,7 @@ brew "wget"
 brew "woff2"
 brew "kubectx"
 brew "kubernetes-cli"
+brew "bat"
 
 cask "appcleaner"
 cask "balenaetcher"
