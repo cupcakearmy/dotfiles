@@ -16,6 +16,8 @@ platform="$(uname -s)"
 if [[ $platform == "Darwin" ]]; then
 	# Brew
 	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir plugins/dotbot-brew -c "${CONFIG}" "${@}"
+else
+	"${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 fi
 
 # NeoVim & Vim Plugins https://github.com/junegunn/vim-plug
