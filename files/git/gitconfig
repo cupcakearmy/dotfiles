@@ -13,10 +13,8 @@
 [includeIf "gitdir:/Users/nicco/"]
 	path = "~/.dotfiles/files/git/config.personal"
 
-[includeIf "gitdir:/Users/niccolo.borgioli/"]
+[includeIf "gitdir:/Users/niccoloborgioli/"]
 	path = "~/.dotfiles/files/git/config.work"
 
-[includeIf "gitdir:/home/nicco/"]
-	path = "~/.dotfiles/files/git/config.lenovo"
 [pull]
 	rebase = false

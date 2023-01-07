@@ -2,6 +2,8 @@ set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 set -x PIPENV_VENV_IN_PROJECT true
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 export GOPATH="$HOME/.go"
 if type -q brew
   export GOROOT=(brew --prefix go)"/libexec"
@@ -16,6 +18,6 @@ if [ -f '$HOME/Desktop/google-cloud-sdk/path.fish.inc' ]; . '$HOME/Desktop/googl
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
 
 # pnpm
-set -gx PNPM_HOME "/Users/nicco/Library/pnpm"
+set -gx PNPM_HOME "$HOME/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
