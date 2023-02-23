@@ -36,7 +36,7 @@ if [[ $platform == "Darwin" ]]; then
 	if uninstalled brew; then
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	fi
-	brew bundle --file ./files/Brewfile
+	brew bundle --no-lockfile --file ./files/Brewfile
 
 	# iTerm2
 	defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.dotfiles/files/iterm2"
