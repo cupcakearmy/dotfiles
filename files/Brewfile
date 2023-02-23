@@ -1,7 +1,5 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 
 brew "fish"
 brew "git"
@@ -25,10 +23,12 @@ brew "kubernetes-cli"
 brew "bat"
 brew "rsync"
 
+# Fonts
+cask "font-hack-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+
 cask "appcleaner"
 cask "balenaetcher"
-cask "font-hack-nerd-font"
-cask "font-jetbrains-mono"
 cask "mark-text"
 cask "sloth"
 cask "keka"

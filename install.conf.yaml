@@ -12,7 +12,6 @@
     ~/.vimrc: files/vimrc
     ~/.config/nvim/init.vim: files/vimrc
     ~/.config/fish: files/fish
-    ~/.config/omf: files/omf
     ~/.config/key-mapper: files/key-mapper
     ~/.gitignore_global: files/git/gitignore_global
     ~/.tmux.conf: files/tmux.conf

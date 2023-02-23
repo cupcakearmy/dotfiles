@@ -1,4 +1,3 @@
 # Todo
 
-- omf
 - change shell
