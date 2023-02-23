@@ -2,7 +2,9 @@ set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 set -x PIPENV_VENV_IN_PROJECT true
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -x /opt/homebrew/bin/brew ]
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+end
 
 export GOPATH="$HOME/.go"
 if type -q brew
