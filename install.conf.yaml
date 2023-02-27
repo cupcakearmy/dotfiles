@@ -15,3 +15,4 @@
     ~/.config/key-mapper: files/key-mapper
     ~/.gitignore_global: files/git/gitignore_global
     ~/.tmux.conf: files/tmux.conf
+    ~/.config/omp: files/omp
