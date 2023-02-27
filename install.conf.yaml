@@ -13,6 +13,8 @@
     ~/.config/nvim/init.vim: files/vimrc
     ~/.config/fish: files/fish
     ~/.config/key-mapper: files/key-mapper
+    ~/.config/omp: files/omp
+    ~/.zshrc: files/zsh/.zshrc
+    ~/.antigen.zsh: files/zsh/.antigen.zsh
     ~/.gitignore_global: files/git/gitignore_global
     ~/.tmux.conf: files/tmux.conf
-    ~/.config/omp: files/omp
