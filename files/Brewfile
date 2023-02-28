@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
+tap "jandedobbeleer/oh-my-posh"
 
 brew "fish"
 brew "git"
@@ -22,6 +23,7 @@ brew "kubectx"
 brew "kubernetes-cli"
 brew "bat"
 brew "rsync"
+brew "oh-my-posh"
 
 # Fonts
 cask "font-hack-nerd-font"
