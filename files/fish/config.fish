@@ -24,4 +24,4 @@ set -gx PNPM_HOME "$HOME/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
-oh-my-posh init fish --config ~/.config/omp/powerlevel10k_modern.omp.json | source
+oh-my-posh init fish --config ~/.config/omp/main.omp.yaml | source

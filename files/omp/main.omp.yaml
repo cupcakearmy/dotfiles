@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json
+
+version: 2
+
+common:
+  diamond: &diamond
+    style: diamond
+    leading_diamond: ""
+    # trailing_diamond: ""
+  powerline: &powerline
+    style: powerline
+    powerline_symbol: ""
+
+blocks:
+  - alignment: left
+    segments:
+      - <<: *diamond
+        background: "#ffffff"
+        foreground: "#000000"
+        template: "{{ if .WSL }}WSL at {{ end }}{{.Icon}}"
+        type: os
+      - <<: *powerline
+        type: root
+        properties:
+          style: full
+        template: "  "
+        background: "#0000ff"
+        foreground: "#000000"
+      - <<: *powerline
+        type: path
+        properties:
+          style: full
+        template: " {{ .Path }} "
+        background: "#0000ff"
+        foreground: "#ffffff"
+      - <<: *powerline
+        type: git
+        template: " {{ .HEAD }} "
+        background: "#D4E157"
+        foreground: "#000000"
+    type: prompt
+
+  - alignment: right
+    segments:
+      # ENVS
+      - background: "#7FD5EA"
+        foreground: "#000000"
+        leading_diamond: ""
+        style: diamond
+        template:
+          " {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{
+          end }}{{ .Full }}{{ end }} <transparent></>"
+        type: python
+      - background: "#7FD5EA"
+        foreground: "#ffffff"
+        leading_diamond: ""
+        style: diamond
+        template: " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} <transparent></>"
+        type: go
+      - background: "#7FD5EA"
+        foreground: "#000000"
+        leading_diamond: ""
+        style: diamond
+        template: " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} <transparent></>"
+        type: node
+      - <<: *powerline
+        type: kubectl
+
+      # UTILITY
+      - <<: *diamond
+        type: shell
+        background: "#D4E157"
+        foreground: "#000000"
+        template: "{{ .Name }}"
+      - <<: *powerline
+        type: executiontime
+        properties:
+          style: round
+          threshold: 1
+        background: "#82eeff"
+        foreground: "#000000"
+      - <<: *powerline
+        background: "#ffffff"
+        foreground: "#000000"
+        properties:
+          time_format: "15:04:05"
+        template: " {{ .CurrentDate | date .Format }} "
+        type: time
+    type: prompt
+
+  - alignment: left
+    newline: true
+    segments:
+      - foreground: "#D4E157"
+        foreground_templates:
+          - "{{ if gt .Code 0 }}#FF5252{{ end }}"
+        properties:
+          always_enabled: true
+        style: plain
+        template: "❯ "
+        type: exit
+    type: prompt
