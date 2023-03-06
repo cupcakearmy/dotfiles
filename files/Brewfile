@@ -24,6 +24,7 @@ brew "kubernetes-cli"
 brew "bat"
 brew "rsync"
 brew "oh-my-posh"
+brew "fnm"
 
 # Fonts
 cask "font-hack-nerd-font"
