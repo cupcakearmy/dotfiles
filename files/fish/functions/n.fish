@@ -1,4 +1,4 @@
 function n
-	nvm install $argv;
-	nvm use $argv;
+	fnm install $argv;
+	fnm use $argv;
 end
