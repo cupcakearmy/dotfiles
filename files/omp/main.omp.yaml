@@ -17,7 +17,7 @@ blocks:
       - <<: *diamond
         background: "#ffffff"
         foreground: "#000000"
-        template: "{{ if .WSL }}WSL at {{ end }}{{.Icon}}"
+        template: "{{ if .WSL }}WSL at {{ end }}{{.Icon}} "
         type: os
       - <<: *powerline
         type: root
@@ -63,8 +63,12 @@ blocks:
         style: diamond
         template: " {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} <transparent></>"
         type: node
-      - <<: *powerline
-        type: kubectl
+      - type: kubectl
+        template: "{{ .Context }}{{ if .Namespace }}::{{ .Namespace }}{{ end }} <transparent></>"
+        background: "#7FD5EA"
+        foreground: "#000000"
+        style: diamond
+        leading_diamond: ""
 
       # UTILITY
       - <<: *diamond
@@ -76,7 +80,7 @@ blocks:
         type: executiontime
         properties:
           style: round
-          threshold: 1
+          always_enabled: true
         background: "#82eeff"
         foreground: "#000000"
       - <<: *powerline
