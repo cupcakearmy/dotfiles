@@ -1,0 +1,31 @@
+lockfileVersion: 5.4
+
+specifiers:
+  '@k-vyn/coloralgorithm': ^1.0.0
+  yaml: ^2.2.1
+
+dependencies:
+  '@k-vyn/coloralgorithm': 1.0.0
+  yaml: 2.2.1
+
+packages:
+
+  /@k-vyn/coloralgorithm/1.0.0:
+    resolution: {integrity: sha512-a9aAOXxQ+c2Mw5sMC39elT0wYkPa3qktFjtxVkfY3mQEFBr7NMQEczCARVdkmIKo1dIrgNSx3z12sTXohzSZDg==}
+    dependencies:
+      bezier-easing: 2.1.0
+      chroma-js: 2.4.2
+    dev: false
+
+  /bezier-easing/2.1.0:
+    resolution: {integrity: sha512-gbIqZ/eslnUFC1tjEvtz0sgx+xTK20wDnYMIA27VA04R7w6xxXQPZDbibjA9DTWZRA2CXtwHykkVzlCaAJAZig==}
+    dev: false
+
+  /chroma-js/2.4.2:
+    resolution: {integrity: sha512-U9eDw6+wt7V8z5NncY2jJfZa+hUH8XEj8FQHgFJTrUFnJfXYf4Ml4adI2vXZOjqRDpFWtYVWypDfZwnJ+HIR4A==}
+    dev: false
+
+  /yaml/2.2.1:
+    resolution: {integrity: sha512-e0WHiYql7+9wr4cWMx3TVQrNwejKaEe7/rHNmQmqRjazfOP5W8PB6Jpebb5o6fIapbz9o9+2ipcaTM2ZwDI6lw==}
+    engines: {node: '>= 14'}
+    dev: false
