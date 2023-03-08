@@ -73,12 +73,13 @@ blocks:
 
       # STATIC UTILITY
       - type: exit
-        template: "{{ .Code }}"
+        template: "{{ if gt .Code 0 }}\uf00d {{ .Code }} {{ .Meaning }}{{ else }}\uf42e{{ end }}"
         properties:
           always_enabled: true
         <<: *diamond_prefix
-        background: "p:main-10"
         foreground: "p:main-70"
+        background_templates:
+          - "{{ if gt .Code 0 }}p:error-0{{ else }}p:main-10{{ end }}"
 
       - type: executiontime
         properties:
