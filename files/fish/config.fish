@@ -25,7 +25,9 @@ set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
 # Node
-fnm env --use-on-cd | source
+if type -q brew
+	fnm env --use-on-cd | source
+end
 
 # Theme
 oh-my-posh init fish --config ~/.config/omp/main.omp.yaml | source
