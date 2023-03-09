@@ -25,6 +25,7 @@ brew "bat"
 brew "rsync"
 brew "oh-my-posh"
 brew "fnm"
+brew "direnv"
 
 # Fonts
 cask "font-hack-nerd-font"

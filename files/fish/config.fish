@@ -10,7 +10,7 @@ export GOPATH="$HOME/.go"
 if type -q brew
   export GOROOT=(brew --prefix go)"/libexec"
 end
-export PATH="$PATH:$GOPATH/bin:$GOROOT/bin:$HOME/.cargo/bin"
+export PATH="$PATH:$GOPATH/bin:$GOROOT/bin"
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '$HOME/Desktop/google-cloud-sdk/path.fish.inc' ]; . '$HOME/Desktop/google-cloud-sdk/path.fish.inc'; end
@@ -25,9 +25,15 @@ set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
 # Node
-if type -q brew
+if type -q fnm
 	fnm env --use-on-cd | source
 end
 
+if type -q direnv
+	direnv hook fish | source
+end
+
 # Theme
-oh-my-posh init fish --config ~/.config/omp/main.omp.yaml | source
+if type -q oh-my-posh
+	oh-my-posh init fish --config ~/.config/omp/main.omp.yaml | source
+end

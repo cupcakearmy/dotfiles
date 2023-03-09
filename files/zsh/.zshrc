@@ -20,4 +20,6 @@ export PATH="$PNPM_HOME:$PATH"
 # Node
 eval "$(fnm env --use-on-cd)"
 
+eval "$(direnv hook zsh)"
+
 eval "$(oh-my-posh init zsh)"
