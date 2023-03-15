@@ -1,6 +1,7 @@
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 set -x PIPENV_VENV_IN_PROJECT true
+set -x POETRY_VIRTUALENVS_IN_PROJECT true
 
 if [ -x /opt/homebrew/bin/brew ]
 	eval "$(/opt/homebrew/bin/brew shellenv)"
