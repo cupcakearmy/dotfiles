@@ -48,6 +48,3 @@ do
 		curl -fLo "$dir" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	fi
 done
-
-# Fish Tide Theme
-# echo 3 1 2 4 4 5 2 3 4 3 2 2 2 y | fish -c 'tide configure' >/dev/null
