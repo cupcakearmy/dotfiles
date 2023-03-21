@@ -25,10 +25,6 @@ function uninstalled() {
 	fi
 }
 
-# PNPM
-if uninstalled pnpm; then
-	curl -fsSL https://get.pnpm.io/install.sh | sh -
-fi
 
 # macOS
 if [[ $platform == "Darwin" ]]; then
@@ -43,6 +39,11 @@ if [[ $platform == "Darwin" ]]; then
 	defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 fi
 
+# PNPM
+if uninstalled pnpm; then
+	curl -fsSL https://get.pnpm.io/install.sh | sh -
+fi
+
 # NeoVim & Vim Plugins https://github.com/junegunn/vim-plug
 for dir in "$HOME/.vim/autoload/plug.vim" "${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/autoload/plug.vim"
 do
@@ -50,8 +51,6 @@ do
 	then
 		echo "Installing Plug to: $dir"
 		curl -fLo "$dir" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	else
-		echo "Plug already installed at: $dir"
 	fi
 done
 
