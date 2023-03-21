@@ -25,6 +25,9 @@ set -gx PNPM_HOME "$HOME/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
+# Rust
+set -gx PATH "$HOME/.cargo/bin" $PATH
+
 # Node
 if type -q fnm
 	fnm env --use-on-cd | source
