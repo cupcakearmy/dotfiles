@@ -20,11 +20,6 @@ if [ -f '$HOME/Desktop/google-cloud-sdk/path.fish.inc' ]; . '$HOME/Desktop/googl
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/fish/__tabtab.fish ]; and . ~/.config/tabtab/fish/__tabtab.fish; or true
 
-# pnpm
-set -gx PNPM_HOME "$HOME/Library/pnpm"
-set -gx PATH "$PNPM_HOME" $PATH
-# pnpm end
-
 # Rust
 set -gx PATH "$HOME/.cargo/bin" $PATH
 
