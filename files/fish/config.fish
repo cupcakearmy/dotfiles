@@ -36,3 +36,7 @@ end
 if type -q oh-my-posh
 	oh-my-posh init fish --config ~/.config/omp/main.omp.yaml | source
 end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
