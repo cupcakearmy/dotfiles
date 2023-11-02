@@ -14,8 +14,8 @@ for (const { properties, options } of colors) {
 }
 
 const configFile = '../main.omp.yaml'
-const config = await fs.readFileSync(configFile, 'utf8')
+const config = fs.readFileSync(configFile, 'utf8')
 // config.palette = palette
 const output = yaml.stringify({ palette })
 
-await fs.writeFileSync(configFile, config.replace(/palette:(.|\s)*$/, output))
+fs.writeFileSync(configFile, config.replace(/palette:(.|\s)*$/, output))
