@@ -11,5 +11,6 @@
     ~/.config/nvim: files/nvim
     ~/.config/fish: files/fish
     ~/.config/omp: files/omp
+    ~/.config/kitty/: files/kitty
     ~/.gitignore_global: files/git/gitignore_global
     ~/.tmux.conf: files/tmux.conf
